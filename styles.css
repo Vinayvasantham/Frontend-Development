@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    margin-top: 60px;
+    flex: 1;
+}
+
+/* Left Menu */
+.left-menu {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.left-menu.collapsed {
+    width: 5%;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .left-menu, .right-panel {
+        display: none;
+    }
+    .main-content {
+        flex: 1;
+    }
+}
